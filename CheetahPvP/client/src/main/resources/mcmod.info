@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "cheetahpvp",
+        "name": "CheetahPvP",
+        "description": "A professional Minecraft PvP client with performance optimizations and competitive features",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["CheetahPvP Team"],
+        "credits": "Inspired by Badlion Client",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

@@ -1,0 +1,218 @@
+/* CheetahPvP Launcher - Dark Theme */
+
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.main-window {
+    -fx-background-color: linear-gradient(to bottom right, #1a1a2e, #16213e);
+    -fx-background-radius: 15;
+}
+
+.title-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 15 15 0 0;
+}
+
+.title-text {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.version-text {
+    -fx-text-fill: #888888;
+    -fx-font-size: 12px;
+}
+
+.window-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888888;
+    -fx-font-size: 14px;
+    -fx-padding: 5 10;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+}
+
+.window-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #ffffff;
+}
+
+.close-button:hover {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: #ffffff;
+}
+
+.main-content {
+    -fx-background-color: transparent;
+}
+
+.logo-text {
+    -fx-text-fill: linear-gradient(to right, #f39c12, #e74c3c);
+    -fx-effect: dropshadow(gaussian, rgba(243, 156, 18, 0.5), 20, 0, 0, 0);
+}
+
+.sub-logo-text {
+    -fx-text-fill: #666666;
+    -fx-font-size: 16px;
+    -fx-letter-spacing: 10px;
+}
+
+.section-label {
+    -fx-text-fill: #888888;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.tab-button {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #888888;
+    -fx-padding: 10 25;
+    -fx-background-radius: 8 0 0 8;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.tab-button:last-child {
+    -fx-background-radius: 0 8 8 0;
+}
+
+.tab-button:selected {
+    -fx-background-color: linear-gradient(to right, #f39c12, #e67e22);
+    -fx-text-fill: #ffffff;
+}
+
+.tab-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-input {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #666666;
+    -fx-padding: 12 15;
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+}
+
+.text-input:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: #f39c12;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+}
+
+.combo-input {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8 12;
+    -fx-background-radius: 8;
+    -fx-font-size: 14px;
+}
+
+.combo-input .list-cell {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+}
+
+.combo-input .list-view {
+    -fx-background-color: #1a1a2e;
+}
+
+.combo-input .list-view .list-cell:hover {
+    -fx-background-color: rgba(243, 156, 18, 0.3);
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f39c12;
+    -fx-border-color: #f39c12;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: rgba(243, 156, 18, 0.2);
+}
+
+.play-button {
+    -fx-background-color: linear-gradient(to right, #f39c12, #e67e22);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(243, 156, 18, 0.5), 15, 0, 0, 5);
+}
+
+.play-button:hover {
+    -fx-background-color: linear-gradient(to right, #e67e22, #d35400);
+    -fx-effect: dropshadow(gaussian, rgba(243, 156, 18, 0.7), 20, 0, 0, 8);
+}
+
+.play-button:disabled {
+    -fx-background-color: #555555;
+    -fx-effect: none;
+}
+
+.launch-progress {
+    -fx-accent: #f39c12;
+    -fx-control-inner-background: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 10;
+}
+
+.launch-progress .bar {
+    -fx-background-color: linear-gradient(to right, #f39c12, #e67e22);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+
+.launch-progress .track {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 10;
+}
+
+.status-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 0 0 15 15;
+}
+
+.status-text {
+    -fx-text-fill: #27ae60;
+    -fx-font-size: 12px;
+}
+
+.credits-text {
+    -fx-text-fill: #555555;
+    -fx-font-size: 11px;
+}
+
+/* Scrollbar styling */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}

@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        maven { url = 'https://repo.spongepowered.org/maven/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:5.1.+'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
+
+minecraft {
+    mappings channel: 'stable', version: '22-1.8.9'
+    
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            jvmArgs '-Djava.security.manager=allow'
+            
+            mods {
+                cheetahpvp {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "CheetahPvP",
+            "Specification-Version": "1",
+            "Implementation-Title": project.name,
+            "Implementation-Version": project.version,
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+task copyJarToMods(type: Copy) {
+    from jar
+    into "${System.getProperty('user.home')}/.cheetahpvp/mods"
+    rename { String fileName -> "CheetahPvP-1.0.0.jar" }
+}
+
+jar.finalizedBy(copyJarToMods)
